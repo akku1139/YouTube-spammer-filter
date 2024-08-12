@@ -13,7 +13,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-      - run: python ./src/main.py
+      - run: python ./scripts/main.py
       - name: Git
         run: |
           if [ -n "$(git status --porcelain)" ]; then
