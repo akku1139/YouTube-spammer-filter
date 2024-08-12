@@ -1,2 +1,2 @@
-www.youtube.com##a[href="/@%E7%B4%94%E7%99%BD%E3%81%AE%E5%A4%A9%E4%BD%BF%E3%83%A9%E3%83%95%E3%83%A1%E3%82%B7%E3%82%A2_3"]:upward(ytd-comment-view-model)
-www.youtube.com##a[href="/@%E7%B4%94%E7%99%BD%E3%81%AE%E5%A4%A9%E4%BD%BF%E3%83%A9%E3%83%95%E3%83%A1%E3%82%B7%E3%82%A2_3"]:upward(ytd-comment-view-model)
+www.youtube.com##a[href="/@%E7%B4%94%E7%99%BD%E3%81%AE%E5%A4%A9%E4%BD%BF%E3%83%A9%E3%83%95%E3%83%A1%E3%82%B7%E3%82%A2_3%0A"]:upward(ytd-comment-view-model)
+www.youtube.com##a[href="/@%E7%A7%81%E3%81%AE%E5%90%8D%E5%89%8D%E3%81%AF%E3%82%B0%E3%83%AF%E3%81%A1%E3%82%83%E3%82%93%E3%81%A7%E3%81%99%0A"]:upward(ytd-comment-view-model)
