@@ -20,6 +20,7 @@ www.youtube.com##a[href="/@%E4%BD%95%E3%81%97%E3%81%A6%E3%82%93%E3%81%A0%E3%81%8
 www.youtube.com##a[href="/@user-zouhakuten"]:upward(6)
 www.youtube.com##a[href="/@nisemonozzzzzz"]:upward(6)
 www.youtube.com##a[href="/@%E7%B4%94%E7%99%BD%E3%81%AE%E5%A4%A9%E4%BD%BF%E3%83%A9%E3%83%95%E3%83%AC%E3%82%B7%E3%82%A25"]:upward(6)
+www.youtube.com##a[href="/@NekoNABEE"]:upward(6)
 
 ! spam words
 
