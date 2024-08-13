@@ -11,7 +11,8 @@ def make(filename, comment, func):
   out("\n! " + comment)
   with open("./src/" + filename) as src:
     for line in src:
-      out(func(line.strip()))
+      if line.strip() != "":
+        out(func(line.strip()))
 
 make("channels.txt", "spammer channels", lambda line: ("www.youtube.com##a[href=\"/" + urllib.parse.quote(line.removeprefix("/").removesuffix("\n"), safe="@") + "\"]:upward(6)"))
 
