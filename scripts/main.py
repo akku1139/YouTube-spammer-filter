@@ -5,19 +5,18 @@ outfile = open("./filter.txt", mode="w")
 def out(text):
   outfile.write(text + "\n")
 
-out("! spammer channels")
-with open("./src/channels.txt") as src:
-  for line in src:
-    out("www.youtube.com##a[href=\"/" + urllib.parse.quote(line.removeprefix("/").removesuffix("\n"), safe="@") + "\"]:upward(6)")
+out("! YouTube spam comment filter for Japanese")
 
-out("\n! spam words")
-with open("./src/words.txt") as src:
-  for line in src:
-    out("###content-text>span:has-text(/" + line + "/):upward(5)")
+def make(filename, comment, func):
+  out("\n! " + comment)
+  with open("./src/" + filename) as src:
+    for line in src:
+      out(func(line))
 
-out("\n! template comments")
-with open("./src/templates.txt") as src:
-  for line in src:
-    out("###content-text>span:has-text(" + line + "):upward(5)")
+make("channels.txt", "spammer channels", lambda line: ("www.youtube.com##a[href=\"/" + urllib.parse.quote(line.removeprefix("/").removesuffix("\n"), safe="@") + "\"]:upward(6)"))
+
+make("words.txt", "spam words", lambda line: ("###content-text>span:has-text(/" + line + "/):upward(5)"))
+
+make("templates.txt", "template comments", lambda line: ("###content-text>span:has-text(" + line + "):upward(5)"))
 
 outfile.close()
