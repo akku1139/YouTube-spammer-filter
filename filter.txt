@@ -22,7 +22,7 @@ www.youtube.com##a[href="/@nisemonozzzzzz"]:upward(6)
 www.youtube.com##a[href="/@%E7%B4%94%E7%99%BD%E3%81%AE%E5%A4%A9%E4%BD%BF%E3%83%A9%E3%83%95%E3%83%AC%E3%82%B7%E3%82%A25"]:upward(6)
 
 ! spam words
-###content-text>span:has-text(/翻訳したらいい事がある/):upward(5)
+###content-text>span:has-text(//):upward(5)
 
 ! template comments
 ###content-text>span:has-text(翻訳したらいい事があるカモよ？？तिमीलाई श्राप दिइएको छ। हप्तामा हड्डीहरू बिस्तारै भाँच्छन्। यदि तपाईंले यो श्रापलाई बेवास्ता गर्नुभयो वा यसलाई ध्यान नदिई छोड्नुभयो भने, तपाईंको शरीर असामान्य हुनेछ। मद्दत गर्ने एक मात्र तरिका मसँग दर्ता गर्नु हो।):upward(5)
