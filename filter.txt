@@ -3,3 +3,4 @@ www.youtube.com##a[href="/@%E7%A7%81%E3%81%AE%E5%90%8D%E5%89%8D%E3%81%AF%E3%82%B
 www.youtube.com##a[href="/@user-cv1os6hd2p"]:upward(ytd-comment-view-model)
 www.youtube.com##a[href="/@user-is7yc4vg4u"]:upward(ytd-comment-view-model)
 www.youtube.com##a[href="/@hafu2362"]:upward(ytd-comment-view-model)
+www.youtube.com##a[href="/@mikudayon"]:upward(ytd-comment-view-model)
