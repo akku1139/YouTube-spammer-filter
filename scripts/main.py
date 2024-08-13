@@ -15,6 +15,6 @@ out("\n! spam words")
 
 with open("./src/words.txt") as src:
   for line in src:
-    out.write("###content-text>span:has-text(/" + line + "/):upward(5)")
+    out("###content-text>span:has-text(/" + line + "/):upward(5)")
 
-out.close()
+outfile.close()
