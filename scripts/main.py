@@ -21,6 +21,6 @@ make("channels.txt", "spammer channels", lambda line: ("www.youtube.com##a[href=
 
 make("words.txt", "spam words", lambda line: ("###content-text>span:has-text(/" + line + "/):upward(5)"))
 
-make("templates.txt", "template comments", lambda line: ("###content-text>span:has-text(" + line + "):upward(5)"))
+make("templates.txt", "template comments", lambda line: ("###content-text>span:has-text(\"" + line + "\"):upward(5)"))
 
 outfile.close()
