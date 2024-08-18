@@ -34,3 +34,4 @@ www.youtube.com##a[href="/@Mei_4646"]:upward(6)
 ! template comments
 ###content-text>span:has-text("翻訳したらいい事があるカモよ？？तिमीलाई श्राप दिइएको छ। हप्तामा हड्डीहरू बिस्तारै भाँच्छन्। यदि तपाईंले यो श्रापलाई बेवास्ता गर्नुभयो वा यसलाई ध्यान नदिई छोड्नुभयो भने, तपाईंको शरीर असामान्य हुनेछ। मद्दत गर्ने एक मात्र तरिका मसँग दर्ता गर्नु हो।"):upward(5)
 ###content-text>span:has-text("だから何？"):upward(5)
+###content-text>span:has-text("で？"):upward(5)
