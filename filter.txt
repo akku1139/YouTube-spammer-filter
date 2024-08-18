@@ -41,7 +41,7 @@ www.youtube.com###sections a[href="/@Saisei_listni_eroaruyo"]:upward(6)
 www.youtube.com###sections a[href="/@Mei_4646"]:upward(6)
 
 ! spammer channels (with regex)
-www.youtube.com###sections a[href=/\/%5E@.%3F%E7%B4%94%E7%99%BD%E3%81%AE%E5%A4%A9%E4%BD%BF%E3%83%A9%E3%83%95%28%E3%83%AC%7C%E3%83%A1%29%E3%82%B7%E3%82%A2.%2A%24/]:upward(6)
+www.youtube.com###sections a[href=/\/%5E@.?%E7%B4%94%E7%99%BD%E3%81%AE%E5%A4%A9%E4%BD%BF%E3%83%A9%E3%83%95(%E3%83%AC%7C%E3%83%A1)%E3%82%B7%E3%82%A2.*$/]:upward(6)
 
 ! spam words
 www.youtube.com###sections #content-text>span:has-text(/再生リストに激 工口 ど うがあるよん/):upward(5)
