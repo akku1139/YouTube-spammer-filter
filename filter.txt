@@ -40,13 +40,13 @@ www.youtube.com##a[href="/@Saisei_listni_eroaruyo"]:upward(6)
 www.youtube.com##a[href="/@Mei_4646"]:upward(6)
 
 ! spam words
-###content-text>span:has-text(/再生リストに激 工口 ど うがあるよん/):upward(5)
+www.youtube.com###content-text>span:has-text(/再生リストに激 工口 ど うがあるよん/):upward(5)
 
 ! template comments
-###content-text>span:has-text("翻訳したらいい事があるカモよ？？तिमीलाई श्राप दिइएको छ। हप्तामा हड्डीहरू बिस्तारै भाँच्छन्। यदि तपाईंले यो श्रापलाई बेवास्ता गर्नुभयो वा यसलाई ध्यान नदिई छोड्नुभयो भने, तपाईंको शरीर असामान्य हुनेछ। मद्दत गर्ने एक मात्र तरिका मसँग दर्ता गर्नु हो।"):upward(5)
-###content-text>span:has-text("だから何？"):upward(5)
-###content-text>span:has-text("で？"):upward(5)
-###content-text>span:has-text("で？君の意見きいてないから"):upward(5)
-###content-text>span:has-text("で？貴方の感想なんて誰も求めてませんよ"):upward(5)
-###content-text>span:has-text("あなたの感想なんか誰も求めてませんよ？"):upward(5)
-###content-text>span:has-text("絶対に翻訳したら？？？？？？？तिमीलाई श्राप दिइएको छ। हप्तामा हड्डीहरू बिस्तारै भाँच्छन्। यदि तपाईंले यो श्रापलाई बेवास्ता गर्नुभयो वा यसलाई ध्यान नदिई छोड्नुभयो भने, तपाईंको शरीर असामान्य हुनेछ। मद्दत गर्ने एक मात्र तरिका मसँग दर्ता गर्नु हो।"):upward(5)
+www.youtube.com###content-text>span:has-text("翻訳したらいい事があるカモよ？？तिमीलाई श्राप दिइएको छ। हप्तामा हड्डीहरू बिस्तारै भाँच्छन्। यदि तपाईंले यो श्रापलाई बेवास्ता गर्नुभयो वा यसलाई ध्यान नदिई छोड्नुभयो भने, तपाईंको शरीर असामान्य हुनेछ। मद्दत गर्ने एक मात्र तरिका मसँग दर्ता गर्नु हो।"):upward(5)
+www.youtube.com###content-text>span:has-text("だから何？"):upward(5)
+www.youtube.com###content-text>span:has-text("で？"):upward(5)
+www.youtube.com###content-text>span:has-text("で？君の意見きいてないから"):upward(5)
+www.youtube.com###content-text>span:has-text("で？貴方の感想なんて誰も求めてませんよ"):upward(5)
+www.youtube.com###content-text>span:has-text("あなたの感想なんか誰も求めてませんよ？"):upward(5)
+www.youtube.com###content-text>span:has-text("絶対に翻訳したら？？？？？？？तिमीलाई श्राप दिइएको छ। हप्तामा हड्डीहरू बिस्तारै भाँच्छन्। यदि तपाईंले यो श्रापलाई बेवास्ता गर्नुभयो वा यसलाई ध्यान नदिई छोड्नुभयो भने, तपाईंको शरीर असामान्य हुनेछ। मद्दत गर्ने एक मात्र तरिका मसँग दर्ता गर्नु हो।"):upward(5)
