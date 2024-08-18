@@ -20,6 +20,8 @@ def make(filename, comment, func):
 
 make("channels.txt", "spammer channels", lambda line: ("a[href=\"/" + urllib.parse.quote(line.removeprefix("/").removesuffix("\n"), safe="@") + "\"]:upward(6)"))
 
+make("channel-regex.txt", "spammer channels (with regex)", lambda line: ("a[href=/\/" + urllib.parse.quote(line.removeprefix("/").removesuffix("\n"), safe="@") + "/]:upward(6)"))
+
 make("words.txt", "spam words", lambda line: ("#content-text>span:has-text(/" + line + "/):upward(5)"))
 
 make("templates.txt", "template comments", lambda line: ("#content-text>span:has-text(\"" + line + "\"):upward(5)"))
