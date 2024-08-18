@@ -24,7 +24,8 @@ def make(filename, comment, func):
 
 make("channels.txt", "spammer channels", lambda line: ("a[href=\"/" + encodeURI(line.removeprefix("/")) + "\"]:upward(6)"))
 
-make("channel-regex.txt", "spammer channels (with regex)", lambda line: ("a[href=/\/" + encodeURI(line.removeprefix("/"), safe="^\\") + "/]:upward(6)"))
+# 多分 querySelector() の属性Selectorでは正規表現が使えない
+# make("channel-regex.txt", "spammer channels (with regex)", lambda line: ("a[href=/\/" + encodeURI(line.removeprefix("/"), safe="^\\") + "/]:upward(6)"))
 
 make("words.txt", "spam words", lambda line: ("#content-text>span:has-text(/" + line + "/):upward(5)"))
 
