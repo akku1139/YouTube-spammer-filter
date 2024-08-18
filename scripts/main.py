@@ -15,9 +15,9 @@ def make(filename, comment, func):
         continue
       if line.startswith("#"):
         continue
-      out(func(line.strip()))
+      out("www.youtube.com" + func(line.strip()))
 
-make("channels.txt", "spammer channels", lambda line: ("www.youtube.com##a[href=\"/" + urllib.parse.quote(line.removeprefix("/").removesuffix("\n"), safe="@") + "\"]:upward(6)"))
+make("channels.txt", "spammer channels", lambda line: ("##a[href=\"/" + urllib.parse.quote(line.removeprefix("/").removesuffix("\n"), safe="@") + "\"]:upward(6)"))
 
 make("words.txt", "spam words", lambda line: ("###content-text>span:has-text(/" + line + "/):upward(5)"))
 
