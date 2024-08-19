@@ -1,8 +1,8 @@
--# YouTube-spammer-filter
+# YouTube spam comment filter for Japanese
 
 日本語圏の迷惑YouTubeコメントを一掃したいフィルター
 
-明らかに迷惑ユーザーっぽいアカウントをまとめたけど誤ブロックの保証はしないです。
+誤ブロックの保証はしません
 
 ## 使い方
 
