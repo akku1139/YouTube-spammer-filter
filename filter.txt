@@ -15,6 +15,7 @@ www.youtube.com###sections a[href="/@%E3%81%AD%E3%82%8B%E3%81%AD%E3%82%8BH"]:upw
 www.youtube.com###sections a[href="/@%E3%81%AD%E3%82%8B%E3%81%AD%E3%82%8B%E3%82%B5%E3%83%96%EF%BC%A2"]:upward(6)
 www.youtube.com###sections a[href="/@%E3%81%AD%E3%82%8B%E3%81%AD%E3%82%8B%E3%82%B5%E3%83%96D1"]:upward(6)
 www.youtube.com###sections a[href="/@Tiktok-q4y"]:upward(6)
+www.youtube.com###sections a[href="/@user-ze9zx1wg8l"]:upward(6)
 www.youtube.com###sections a[href="/@user-bu9go2nb8c"]:upward(6)
 www.youtube.com###sections a[href="/@tubasakun"]:upward(6)
 www.youtube.com###sections a[href="/@%E3%82%A4%E3%82%AB%E3%81%95%E3%82%93%E3%81%A0%E3%82%88"]:upward(6)
