@@ -34,11 +34,12 @@ def make(filename, comment, func):
     line_count = 0
     for line in src:
       line_count += 1
-      if line.strip() == "":
+      line = line.strip()
+      if line == "":
         continue
       if line.startswith("#"):
         continue
-      ret = func(line.strip())
+      ret = func(line)
       if ret == "" or ret == None:
         logger.info(f'{filename}:{line_count}: {line} was ignored')
         continue
