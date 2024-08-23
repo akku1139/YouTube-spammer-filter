@@ -13,7 +13,21 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-      - run: python ./scripts/main.py
+
+      - uses: actions/cache@v4
+        id: pip-cache
+        with:
+          path: ~/.cache/pip
+          key: pip-cache-${{ hashFiles('scripts/requirements.txt') }}
+          restore-keys: pip-cache-
+
+      - name: Install Dependencies
+        if: stepspip-cache.outputs.cache-hit != 'true'
+        run: pip install -r ./scripts/requirements.txt
+
+      - name: Make
+        run: python ./scripts/main.py
+
       - name: Git
         run: |
           if [ -n "$(git status --porcelain)" ]; then
