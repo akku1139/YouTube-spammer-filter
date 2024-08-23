@@ -29,13 +29,16 @@ out("! Title: YouTube spam comment filter for Japanese")
 def make(filename, comment, func):
   out("\n! " + comment)
   with open("./src/" + filename) as src:
+    line_count = 0
     for line in src:
+      line_count += 1
       if line.strip() == "":
         continue
       if line.startswith("#"):
         continue
       ret = func(line.strip())
       if ret == "":
+        logger.info(f'File "{filename}", line {line_count} was ignored')
         return
       out("www.youtube.com###sections " + ret)
 
@@ -55,7 +58,8 @@ def make_reply_filter(line):
     except urllib.error.HTTPError as e:
       if e.code == 404:
         logger.warning("Channel not found: "+line)
-      raise # if not 404 (eを再度投げる必要はない)
+      else:
+        raise # if not 404 (eを再度投げる必要はない)
 
   return "##a[href=\"/channel/"+channel_id[line]+"\"]:upward(8)"
   
