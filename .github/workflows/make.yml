@@ -14,19 +14,33 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/cache@v4
+      - name: pip cache
+        uses: actions/cache@v4
         id: pip-cache
         with:
           path: ~/.cache/pip
-          key: pip-cache-${{ hashFiles('scripts/requirements.txt') }}
+          key: pip-cache-${{ hashFiles('requirements.txt') }}
           restore-keys: pip-cache-
 
+      - name: npm cache
+        uses: actions/cache@v4
+        with:
+          path: |
+            ./node_modules
+            ~/.npm
+          key: npm-cache-${{ hashFiles('package-lock.json') }}
+          restore-keys: npm-cache-
+
       - name: Install Dependencies
-        # if: steps.pip-cache.outputs.cache-hit != 'true'
-        run: pip install -r ./scripts/requirements.txt
+        run: |
+          pip install -r ./scripts/requirements.txt
+          npm install
 
       - name: Make
         run: python ./scripts/main.py
+
+      - name: Lint
+        run: npx aglint
 
       - name: Git
         run: |
