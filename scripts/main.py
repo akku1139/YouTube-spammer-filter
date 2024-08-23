@@ -37,8 +37,8 @@ def make(filename, comment, func):
       if line.startswith("#"):
         continue
       ret = func(line.strip())
-      if ret == "":
-        logger.info(f'File "{filename}", line {line_count} was ignored')
+      if ret == "" or ret == None:
+        logger.info(f'{filename} @ {line_count} : {line} was ignored')
         return
       out("www.youtube.com###sections " + ret)
 
