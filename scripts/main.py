@@ -40,7 +40,7 @@ def make(filename, comment, func):
         continue
       ret = func(line.strip())
       if ret == "" or ret == None:
-        logger.info(f'{filename} @ {line_count} : {line} was ignored')
+        logger.info(f'{filename}:{line_count}: {line} was ignored')
         continue
       out("www.youtube.com###sections " + ret)
 
