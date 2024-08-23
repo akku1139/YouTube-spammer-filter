@@ -17,12 +17,12 @@ jobs:
       - uses: actions/cache@v4
         id: pip-cache
         with:
-          path: ~/.local/lib/python3.10
+          path: ~/.cache/pip
           key: pip-cache-${{ hashFiles('scripts/requirements.txt') }}
           restore-keys: pip-cache-
 
       - name: Install Dependencies
-        if: steps.pip-cache.outputs.cache-hit != 'true'
+        # if: steps.pip-cache.outputs.cache-hit != 'true'
         run: pip install -r ./scripts/requirements.txt
 
       - name: Make
