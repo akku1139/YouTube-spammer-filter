@@ -47,7 +47,7 @@ def make(filename, comment, func):
 
 make("channels.txt", "Spammer channels", lambda line: ("a[href^=\"/" + encodeURI(line) + "\"]:upward(6)"))
 
-make("channel-prefix.txt", "spammer channels (with prefix)", lambda line: ("a[href=\"/@" + encodeURI(line) + "\"]:upward(6)"))
+make("channels-prefix.txt", "spammer channels (with prefix)", lambda line: ("a[href=\"/@" + encodeURI(line) + "\"]:upward(6)"))
 
 def make_reply_filter(line):
   if line not in channel_id:
