@@ -2,7 +2,8 @@ import urllib.parse
 import urllib.request
 import urllib.error
 import json
-from logging import getLogger
+import logging
+logging.basicConfig(level=0)
 from bs4 import BeautifulSoup
 
 # データを読み込む
@@ -28,6 +29,7 @@ out("! Title: YouTube spam comment filter for Japanese")
 
 def make(filename, comment, func):
   out("\n! " + comment)
+  logger = logging.getLogger("make")
   with open("./src/" + filename) as src:
     line_count = 0
     for line in src:
@@ -64,7 +66,7 @@ def make_reply_filter(line):
 
   return "##a[href=\"/channel/"+channel_id[line]+"\"]:upward(8)"
 
-logger = getLogger("reply")
+logger = logging.getLogger("reply")
 make("channels.txt", "Reply to spammers", make_reply_filter)
 
 make("words.txt", "Spam words", lambda line: ("#content-text>span:has-text(/" + line + "/):upward(5)"))
