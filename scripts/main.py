@@ -42,7 +42,7 @@ make("channels.txt", "Spammer channels", lambda line: ("a[href=\"/" + encodeURI(
 def make_reply_filter(line):
   if line not in channel_id:
     # エラーが起きない前提のコード
-    res = fetch("https://youtube.com/"+line)
+    res = fetch("https://youtube.com/"+encodeURI(line))
     soup = BeautifulSoup(res, 'html.parser')
     channel_id[line] = soup.find("meta", itemprop="identifier")["content"]
 
