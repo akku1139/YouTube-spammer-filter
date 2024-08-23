@@ -45,11 +45,9 @@ def make(filename, comment, func):
         continue
       out("www.youtube.com###sections " + ret)
 
-make("channels.txt", "Spammer channels", lambda line: ("a[href=\"/" + encodeURI(line.removeprefix("/")) + "\"]:upward(6)"))
+make("channels.txt", "Spammer channels", lambda line: ("a[href^=\"/" + encodeURI(line) + "\"]:upward(6)"))
 
-# 多分 querySelector() の属性Selectorでは正規表現が使えない
-# 無駄に正規表現使うのは重いので前方一致とかで良いと思う
-# make("channel-regex.txt", "spammer channels (with regex)", lambda line: ("a[href=/\/" + encodeURI(line.removeprefix("/"), safe="^\\") + "/]:upward(6)"))
+make("channel-prefix.txt", "spammer channels (with prefix)", lambda line: ("a[href=\"/@" + encodeURI(line) + "\"]:upward(6)"))
 
 def make_reply_filter(line):
   if line not in channel_id:
