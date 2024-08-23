@@ -1,5 +1,6 @@
 import urllib.parse
 import urllib.request
+import json
 from bs4 import BeautifulSoup
 
 # データを読み込む
