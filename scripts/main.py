@@ -39,7 +39,7 @@ def make(filename, comment, func):
       ret = func(line.strip())
       if ret == "" or ret == None:
         logger.info(f'{filename} @ {line_count} : {line} was ignored')
-        return
+        continue
       out("www.youtube.com###sections " + ret)
 
 make("channels.txt", "Spammer channels", lambda line: ("a[href=\"/" + encodeURI(line.removeprefix("/")) + "\"]:upward(6)"))
@@ -74,6 +74,6 @@ make("templates.txt", "Template comments", lambda line: ("#content-text>span:has
 # データを書き出す
 
 with open('./cache/channel_id.json', 'wt') as fp:
-    json.dump(channel_id, fp, indent=2)
+    json.dump(channel_id, fp, indent=2, ensure_ascii=False)
 
 outfile.close()
