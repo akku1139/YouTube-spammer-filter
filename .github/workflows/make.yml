@@ -17,15 +17,13 @@ jobs:
       - uses: actions/cache@v4
         id: pip-cache
         with:
-          path: ~/.cache/pip
+          path: ~/.local/lib/python3.10
           key: pip-cache-${{ hashFiles('scripts/requirements.txt') }}
           restore-keys: pip-cache-
 
       - name: Install Dependencies
         if: steps.pip-cache.outputs.cache-hit != 'true'
         run: pip install -r ./scripts/requirements.txt
-
-      - run: pip show beautifulsoup4
 
       - name: Make
         run: python ./scripts/main.py
