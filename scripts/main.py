@@ -73,7 +73,7 @@ make("templates.txt", "Template comments", lambda line: ("#content-text>span:has
 
 # データを書き出す
 
-with open('./cache/channel_id.json', 'wt') as f:
+with open('./cache/channel_id.json', 'wt') as fp:
     json.dump(channel_id, fp, indent=2)
 
 outfile.close()
