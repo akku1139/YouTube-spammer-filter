@@ -64,7 +64,7 @@ def make_reply_filter(line):
         raise # if not 404 (eを再度投げる必要はない)
       return
 
-  return "##a[href=\"/channel/"+channel_id[line]+"\"]:upward(8)"
+  return "a[href=\"/channel/"+channel_id[line]+"\"]:upward(8)"
 
 logger = logging.getLogger("reply")
 make("channels.txt", "Reply to spammers", make_reply_filter)
