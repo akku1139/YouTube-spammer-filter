@@ -60,9 +60,10 @@ def make_reply_filter(line):
         logger.warning("Channel not found: "+line)
       else:
         raise # if not 404 (eを再度投げる必要はない)
+      return
 
   return "##a[href=\"/channel/"+channel_id[line]+"\"]:upward(8)"
-  
+
 logger = getLogger("reply")
 make("channels.txt", "Reply to spammers", make_reply_filter)
 
