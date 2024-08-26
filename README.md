@@ -32,3 +32,4 @@ AdBlock Plus や AdBlocker Ultimate 等は絶対に使わないでください�
 - [ ] ブロックしているユーザーの動画でその人がリプライしていた場合は展開をした瞬間に消える問題
       [再現](https://www.youtube.com/post/UgkxVH6PsVzZAvzWWbao_qJBB88GO3P3URV2)
 - [ ] ハンドルに `;` 使ってる人が居たら終わる
+- [ ] キャッシュはid:handleに統一する
