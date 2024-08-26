@@ -75,7 +75,7 @@ make("channels.txt", "Reply to spammers", make_reply_filter)
 
 make("channels-id.txt", "", lambda line: ("a[href=\"/channel/"+line+"\"]:upward(8)"))
 
-re_ytInitialData = re.compile("var ytInitialData = (.+?);")
+re_ytInitialData = re.compile('<script nonce=".+?">var ytInitialData = (.+?);</script>')
 def make_id_filter(line):
   if line not in handle:
     try:
