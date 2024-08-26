@@ -28,7 +28,8 @@ out("! Homepage: https://github.com/akku1139/YouTube-spammer-filter")
 out("! Title: YouTube spam comment filter for Japanese")
 
 def make(filename, comment, func):
-  out("\n! " + comment)
+  if comment != "":
+    out("\n! " + comment)
   logger = logging.getLogger("make")
   with open("./src/" + filename) as src:
     line_count = 0
@@ -67,6 +68,8 @@ def make_reply_filter(line):
 
 logger = logging.getLogger("reply")
 make("channels.txt", "Reply to spammers", make_reply_filter)
+
+make("channels-id.txt", "", lambda line: ("a[href=\"/channel/"+line+"\"]:upward(8)"))
 
 make("words.txt", "Spam words", lambda line: ("#content-text>span:has-text(/" + line + "/):upward(5)"))
 
