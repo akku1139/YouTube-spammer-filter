@@ -2,6 +2,7 @@ import urllib.parse
 import urllib.request
 import urllib.error
 import json
+import re
 import logging
 logging.basicConfig(level=0)
 from bs4 import BeautifulSoup
@@ -74,13 +75,13 @@ make("channels.txt", "Reply to spammers", make_reply_filter)
 
 make("channels-id.txt", "", lambda line: ("a[href=\"/channel/"+line+"\"]:upward(8)"))
 
+re_ytInitialData = re.compile("var ytInitialData = (.+?);")
 def make_id_filter(line):
   if line not in handle:
     try:
       # 429とかのエラーが起きない前提のコード
       res = fetch("https://youtube.com/channel/"+line)
-      soup = BeautifulSoup(res, 'html.parser')
-      handle[line] = soup.select_one("yt-content-metadata-view-model span")["content"]
+      handle[line] = json.loads(re_ytInitialData.search(res).group(1))["header"]["pageHeaderRenderer"]["content"]["pageHeaderViewModel"]["metadata"]["contentMetadataViewModel"]["metadataRows"][0]["metadataParts"][0]["text"]["content"]
     except urllib.error.HTTPError as e:
       if e.code == 404:
         logger.warning("Channel not found: "+line)
