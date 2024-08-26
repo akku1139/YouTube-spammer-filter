@@ -118,6 +118,7 @@ www.youtube.com###sections a[href="/channel/UCK1u4oE8ytgSoibDnkg9XzA"]:upward(8)
 www.youtube.com###sections a[href="/channel/UCQAXiyK1CLPvCh1CkrENgMA"]:upward(8)
 www.youtube.com###sections a[href="/channel/UC_zoI7QB_Qtd-q8lcmsSLpQ"]:upward(8)
 www.youtube.com###sections a[href="/channel/UCdMs99g6lywciHE9yD-M_kw"]:upward(8)
+www.youtube.com###sections a[href="/channel/UCgaiLJsBc2_-FCw0NKKEahg"]:upward(8)
 
 ! Spam words
 www.youtube.com###sections #content-text>span:has-text(/再生リストに激 工口 ど うがあるよん/):upward(5)
