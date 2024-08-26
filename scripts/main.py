@@ -11,6 +11,9 @@ from bs4 import BeautifulSoup
 with open("./cache/channel_id.json") as fp:
   channel_id = json.load(fp)
 
+with open("./cache/handle.json") as fp:
+  handle = json.load(fp)
+
 outfile = open("./filter.txt", mode="w")
 
 def out(text):
@@ -71,6 +74,25 @@ make("channels.txt", "Reply to spammers", make_reply_filter)
 
 make("channels-id.txt", "", lambda line: ("a[href=\"/channel/"+line+"\"]:upward(8)"))
 
+def make_reply_filter(line):
+  if line not in channel_id:
+    try:
+      # 429とかのエラーが起きない前提のコード
+      res = fetch("https://youtube.com/channel/"+line)
+      soup = BeautifulSoup(res, 'html.parser')
+      handle[line] = soup.select_one("yt-content-metadata-view-model span")["content"]
+    except urllib.error.HTTPError as e:
+      if e.code == 404:
+        logger.warning("Channel not found: "+line)
+      else:
+        raise # if not 404 (eを再度投げる必要はない)
+      return
+
+  return "a[href=\"/" + encodeURI(handle[line]) + "\"]:upward(6)"
+
+logger = logging.getLogger("id")
+make("channels-id.txt", "Spammer channels (2)", )
+
 make("words.txt", "Spam words", lambda line: ("#content-text>span:has-text(/" + line + "/):upward(5)"))
 
 make("templates.txt", "Template comments", lambda line: ("#content-text>span:has-text(\"" + line + "\"):upward(5)"))
@@ -79,5 +101,8 @@ make("templates.txt", "Template comments", lambda line: ("#content-text>span:has
 
 with open('./cache/channel_id.json', 'wt') as fp:
     json.dump(channel_id, fp, indent=2, ensure_ascii=False)
+
+with open('./cache/handle.json', 'wt') as fp:
+    json.dump(handle, fp, indent=2, ensure_ascii=False)
 
 outfile.close()
