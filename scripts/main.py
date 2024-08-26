@@ -75,7 +75,7 @@ make("channels.txt", "Reply to spammers", make_reply_filter)
 make("channels-id.txt", "", lambda line: ("a[href=\"/channel/"+line+"\"]:upward(8)"))
 
 def make_id_filter(line):
-  if line not in channel_id:
+  if line not in handle:
     try:
       # 429とかのエラーが起きない前提のコード
       res = fetch("https://youtube.com/channel/"+line)
