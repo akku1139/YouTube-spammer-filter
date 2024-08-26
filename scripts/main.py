@@ -74,7 +74,7 @@ make("channels.txt", "Reply to spammers", make_reply_filter)
 
 make("channels-id.txt", "", lambda line: ("a[href=\"/channel/"+line+"\"]:upward(8)"))
 
-def make_reply_filter(line):
+def make_id_filter(line):
   if line not in channel_id:
     try:
       # 429とかのエラーが起きない前提のコード
@@ -91,7 +91,7 @@ def make_reply_filter(line):
   return "a[href=\"/" + encodeURI(handle[line]) + "\"]:upward(6)"
 
 logger = logging.getLogger("id")
-make("channels-id.txt", "Spammer channels (2)", )
+make("channels-id.txt", "Spammer channels (2)", make_id_filter)
 
 make("words.txt", "Spam words", lambda line: ("#content-text>span:has-text(/" + line + "/):upward(5)"))
 
