@@ -187,6 +187,7 @@ www.youtube.com###sections #content-text>span:has-text(/तिमीलाई �
 www.youtube.com###sections #content-text>span:has-text(/https:\/\/youtu\.be\/8QLeIFJ9hSg/):upward(5)
 www.youtube.com###sections #content-text>span:has-text(/再生リストに.+貰えるどうがあげてます!/):upward(5)
 www.youtube.com###sections #content-text>span:has-text(/ギャルの工 口ど うが載せたぞ/):upward(5)
+www.youtube.com###sections #content-text>span:has-text(/.+もらえる動画あげてるわそ/):upward(5)
 
 ! Template comments
 www.youtube.com###sections #content-text>span:has-text("だから？"):upward(5)
