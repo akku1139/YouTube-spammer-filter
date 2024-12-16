@@ -33,8 +33,12 @@ AdBlock Plus や AdBlocker Ultimate 等は絶対に使わないでください�
       [再現](https://www.youtube.com/post/UgkxVH6PsVzZAvzWWbao_qJBB88GO3P3URV2)
 - [ ] ハンドルに `;` 使ってる人が居たら終わる
 - [ ] キャッシュはid:handleに統一する
+- [ ] 部分マッチ削除して軽量化する?
 
 # Note
 
 似た機能を持つ優秀な拡張機能
 https://chromewebstore.google.com/detail/youtube%E3%83%95%E3%82%A3%E3%83%AB%E3%82%BF/dfbfdjepofdfhdddfdggabjjndhiggji?hl=ja
+
+YouTube荒らし報告wiki
+https://w.atwiki.jp/trollinformation/
