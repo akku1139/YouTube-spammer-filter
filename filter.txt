@@ -138,11 +138,6 @@ www.youtube.com###sections a[href="/@user-fe4jj7py7y"]:upward(6)
 www.youtube.com###sections a[href="/@Saisei_listni_eroaruyo"]:upward(6)
 www.youtube.com###sections a[href="/@Mei_4646"]:upward(6)
 
-! spammer channels (with prefix)
-www.youtube.com###sections a[href^="/@%E7%B4%94%E7%99%BD%E3%81%AE%E5%A4%A9%E4%BD%BF%E3%83%A9%E3%83%95%E3%83%AC%E3%82%B7%E3%82%A2"]:upward(6)
-www.youtube.com###sections a[href^="/@%E7%B4%94%E7%99%BD%E3%81%AE%E5%A4%A9%E4%BD%BF%E3%83%A9%E3%83%95%E3%83%A1%E3%82%B7%E3%82%A2"]:upward(6)
-www.youtube.com###sections a[href^="/@%E3%81%AD%E3%82%8B%E3%81%AD%E3%82%8B"]:upward(6)
-
 ! Reply to spammers
 www.youtube.com###sections a[href="/channel/UCyjXD-eXhOkBrUWAtQjAzAg"]:upward(8)
 www.youtube.com###sections a[href="/channel/UC5c-UCKnBmVXiZ10G6W_lvw"]:upward(8)
@@ -280,14 +275,6 @@ www.youtube.com###sections a[href="/channel/UCgaiLJsBc2_-FCw0NKKEahg"]:upward(8)
 
 ! Spammer channels (2)
 www.youtube.com###sections a[href="/@%E7%B4%94%E7%99%BD%E3%81%AE%E5%A4%A9%E4%BD%BF%E3%83%A9%E3%83%95%E3%83%AC%E3%82%B7%E3%82%A2_3"]:upward(6)
-
-! Spam words
-www.youtube.com###sections #content-text>span:has-text(/再生リストに激 工口 ど うがあるよん/):upward(5)
-www.youtube.com###sections #content-text>span:has-text(/तिमीलाई श्राप दिइएको छ। हप्तामा हड्डीहरू बिस्तारै भाँच्छन्। यदि तपाईंले यो श्रापलाई बेवास्ता गर्नुभयो वा यसलाई ध्यान नदिई छोड्नुभयो भने, तपाईंको शरीर असामान्य हुनेछ। मद्दत गर्ने एक मात्र तरिका मसँग दर्ता गर्नु हो।/):upward(5)
-www.youtube.com###sections #content-text>span:has-text(/https:\/\/youtu\.be\/8QLeIFJ9hSg/):upward(5)
-www.youtube.com###sections #content-text>span:has-text(/再生リストに.+貰えるどうがあげてます!/):upward(5)
-www.youtube.com###sections #content-text>span:has-text(/ギャルの工 口ど うが載せたぞ/):upward(5)
-www.youtube.com###sections #content-text>span:has-text(/もらえる動画あげてる/):upward(5)
 
 ! Template comments
 www.youtube.com###sections #content-text>span:has-text("だから？"):upward(5)
