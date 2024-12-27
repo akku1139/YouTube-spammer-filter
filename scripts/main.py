@@ -52,7 +52,7 @@ def make(filename, comment, func):
 
 make("channels.txt", "Spammer channels", lambda line: ("a[href=\"/" + encodeURI(line) + "\"]:upward(6)"))
 
-make("channels-prefix.txt", "spammer channels (with prefix)", lambda line: ("a[href^=\"/@" + encodeURI(line) + "\"]:upward(6)"))
+#make("channels-prefix.txt", "spammer channels (with prefix)", lambda line: ("a[href^=\"/@" + encodeURI(line) + "\"]:upward(6)"))
 
 def make_reply_filter(line):
   if line not in channel_id:
@@ -94,7 +94,7 @@ def make_id_filter(line):
 logger = logging.getLogger("id")
 make("channels-id.txt", "Spammer channels (2)", make_id_filter)
 
-make("words.txt", "Spam words", lambda line: ("#content-text>span:has-text(/" + line + "/):upward(5)"))
+#make("words.txt", "Spam words", lambda line: ("#content-text>span:has-text(/" + line + "/):upward(5)"))
 
 make("templates.txt", "Template comments", lambda line: ("#content-text>span:has-text(\"" + line + "\"):upward(5)"))
 
