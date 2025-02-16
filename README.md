@@ -4,6 +4,10 @@
 
 誤ブロックの保証はしません
 
+**めっちゃYouTubeが重くなるので気をつけてください**
+
+多分 `:upward(6)` が重い
+
 ## 使い方
 
 `filter.txt` を [uBlock Origin (推奨)](https://github.com/gorhill/uBlock) なり [AdGuard](https://adguard.com/ja/adguard-browser-extension/overview.html) なりに追加してください。
